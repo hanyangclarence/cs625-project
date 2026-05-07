@@ -2,17 +2,33 @@ import { useState } from 'react'
 import type { Source, Topic } from '../../types/news'
 import type { FilterState } from '../ViewOptionsSheet'
 import { MatchTagChip } from '../MatchTag'
+import { ExternalLink } from '../ExternalLink'
 
 interface CrossSourceViewProps {
   topic: Topic
   filters: FilterState
+  query?: string
 }
 
-export function CrossSourceView({ topic, filters }: CrossSourceViewProps) {
+function sourceMatchesQuery(s: Source, q: string): boolean {
+  if (!q) return true
+  const needle = q.toLowerCase()
+  return (
+    s.outlet.toLowerCase().includes(needle) ||
+    s.articleTitle.toLowerCase().includes(needle) ||
+    s.summary.toLowerCase().includes(needle)
+  )
+}
+
+export function CrossSourceView({ topic, filters, query = '' }: CrossSourceViewProps) {
   const [openId, setOpenId] = useState<string | null>(null)
 
+  const q = query.trim()
   const sources = topic.sources.filter(
-    (s) => filters.visibleSourceIds.has(s.id) && filters.visibleMatchTags.has(s.matchTag),
+    (s) =>
+      filters.visibleSourceIds.has(s.id) &&
+      filters.visibleMatchTags.has(s.matchTag) &&
+      sourceMatchesQuery(s, q),
   )
 
   return (
@@ -27,7 +43,7 @@ export function CrossSourceView({ topic, filters }: CrossSourceViewProps) {
 
       {sources.length === 0 && (
         <div className="rounded-xl border border-dashed border-slate-300 bg-slate-50 p-4 text-center text-xs text-slate-500">
-          No sources match the current filters. Open View options to restore.
+          {q ? `No sources match “${q}”.` : 'No sources match the current filters. Open View options to restore.'}
         </div>
       )}
 
@@ -63,11 +79,18 @@ function SourceCard({
 
   return (
     <article className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-      <button
-        type="button"
+      <div
+        role="button"
+        tabIndex={0}
         onClick={onToggle}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault()
+            onToggle()
+          }
+        }}
         aria-expanded={open}
-        className="block w-full text-left"
+        className="block w-full cursor-pointer text-left"
       >
         {source.imageUrl && (
           <div className="h-28 w-full overflow-hidden bg-slate-100">
@@ -82,7 +105,10 @@ function SourceCard({
         <div className="p-3">
           <div className="flex items-center justify-between text-[11px] text-slate-500">
             <span className="font-semibold text-slate-700">{source.outlet}</span>
-            <span>{formatDate(source.date)}</span>
+            <div className="flex items-center gap-2">
+              <span>{formatDate(source.date)}</span>
+              {source.url && <ExternalLink href={source.url} />}
+            </div>
           </div>
           <h3 className="mt-1 text-sm font-semibold leading-snug text-slate-900">
             {source.articleTitle}
@@ -94,7 +120,7 @@ function SourceCard({
             </span>
           </div>
         </div>
-      </button>
+      </div>
 
       {open && (
         <div className="border-t border-slate-100 bg-slate-50 px-3 py-2.5">

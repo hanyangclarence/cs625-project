@@ -1,0 +1,532 @@
+{
+  "id": "spring-migration",
+  "title": "spring migration",
+  "sources": [
+    {
+      "id": "usatoday-2026-04-22",
+      "outlet": "USATODAY",
+      "date": "2026-04-22",
+      "articleTitle": "The simple swaps you can make to keep migrating birds safe this spring",
+      "url": "https://www.usatoday.com/story/pets-animals/wildlife/2026/04/22/bird-migration-maps-safety-tips/89735490007/",
+      "imageUrl": "https://www.usatoday.com/gcdn/authoring/authoring-images/2026/04/22/USAT/89738638007-indigo-bunting-getty-images-1226316425.jpg?crop=3616,2034,x573,y539&width=3200&height=1800&format=pjpg&auto=webp",
+      "matchTag": "shared-facts",
+      "matchScore": 92,
+      "trustScore": 69,
+      "trustLabel": "High",
+      "summary": "Hundreds of millions of birds migrate across the United States each spring, with peak migration running from March 1 to June 15. The article provides tips for keeping migrating birds safe, including turning off unnecessary lights and adding patterns to windows to prevent collisions.",
+      "rubric": {
+        "references": 19,
+        "authority": 16,
+        "clarity": 27
+      }
+    },
+    {
+      "id": "khou-2026-02-24",
+      "outlet": "KHOU",
+      "date": "2026-02-24",
+      "articleTitle": "Millions of monarch butterflies begin annual spring migration north",
+      "url": "https://www.khou.com/article/news/nation-world/millions-of-monarch-butterflies-begin-annual-spring-migration-north/507-e340bdb4-8b2c-4e21-b67f-dee4dd3dab5e",
+      "imageUrl": "https://media.khou.com/assets/CCT/images/b64ca8d3-f633-4bdf-b8e4-07ffaa3a5d00/20260224T221327/b64ca8d3-f633-4bdf-b8e4-07ffaa3a5d00_1140x641.jpg",
+      "matchTag": "shared-facts",
+      "matchScore": 88,
+      "trustScore": 57,
+      "trustLabel": "Medium",
+      "summary": "Millions of monarch butterflies begin their annual spring migration northward from Mexico across the United States during March through May in a multigenerational relay, though recent declines have been attributed to drought conditions that stress milkweed plants essential for their survival.",
+      "rubric": {
+        "references": 8,
+        "authority": 16,
+        "clarity": 27
+      }
+    },
+    {
+      "id": "yahoo-2026-05-01",
+      "outlet": "YAHOO",
+      "date": "2026-05-01",
+      "articleTitle": "The spring migration of birds is peaking. Here’s how to watch",
+      "url": "https://www.yahoo.com/lifestyle/articles/spring-migration-birds-peaking-watch-140000790.html",
+      "imageUrl": "https://s.yimg.com/ny/api/res/1.2/iJI7xfdnwEE3TTs34QbvzQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA7Y2Y9d2VicA--/https://media.zenfs.com/en/scientific_american_754/577a4d67f26bc721d6212507e7d49a4a",
+      "matchTag": "evidence-support",
+      "matchScore": 85,
+      "trustScore": 66,
+      "trustLabel": "High",
+      "summary": "Spring bird migration is peaking across North America as hundreds of millions of birds travel from southern wintering grounds to northern breeding grounds. The article explores the experience of bird-watching during migration season, available tools and technology for identifying birds, and the ecological importance of tracking bird populations.",
+      "rubric": {
+        "references": 25,
+        "authority": 16,
+        "clarity": 18
+      }
+    }
+  ],
+  "claims": [
+    {
+      "id": "c-spring-bird-migration-timing",
+      "text": "Spring bird migration in the contiguous United States runs approximately between March 1 and June 15.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "usatoday-2026-04-22",
+          "passage": "In the contiguous United States, peak spring bird migration runs approximately between March 1 and June 15, though some species migrate earlier or later.",
+          "supportLevel": "strong",
+          "score": 95
+        },
+        {
+          "sourceId": "khou-2026-02-24",
+          "passage": "During March, April, and May, millions of monarchs move northward from their overwintering grounds in Mexico, spreading across Texas, the Southeast and eventually into the Midwest and Northeast.",
+          "supportLevel": "partial",
+          "score": 65
+        },
+        {
+          "sourceId": "yahoo-2026-05-01",
+          "passage": "In the northeastern U.S., where I roost, the migrants have been trickling in for a couple of months. The Tree Swallows arrived in March and are now building their nests with grasses and pine needles from the surrounding fields. The Blue-gray Gnatcatchers followed in April.",
+          "supportLevel": "partial",
+          "score": 45
+        }
+      ]
+    },
+    {
+      "id": "c-nightly-migration-volume-450-500m",
+      "text": "On a big night in spring, between 450 million to 500 million birds fly under cover of darkness.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "usatoday-2026-04-22",
+          "passage": "On a big night in the spring, you're talking 450 [million] to 500 million birds flying under cover of darkness.",
+          "supportLevel": "strong",
+          "score": 95
+        },
+        {
+          "sourceId": "yahoo-2026-05-01",
+          "passage": "the wondrous window when hundreds of millions of birds may stream across the sky in a single night en route to claim a territory, find a mate, build a nest and reproduce",
+          "supportLevel": "partial",
+          "score": 45
+        }
+      ]
+    },
+    {
+      "id": "c-nightly-migration-volume-147m",
+      "text": "147 million birds are predicted to take wing over North America on a particular night.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "yahoo-2026-05-01",
+          "passage": "But tonight 147 million birds are predicted to take wing over North America.",
+          "supportLevel": "strong",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "c-nocturnal-migration-altitude",
+      "text": "Most bird species migrate at night, some at altitudes as high as 15,000 feet.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "usatoday-2026-04-22",
+          "passage": "The system uses radar because most species migrate at night, some at altitudes as high as 15,000 feet and aren't visible to the naked eye.",
+          "supportLevel": "strong",
+          "score": 95
+        },
+        {
+          "sourceId": "yahoo-2026-05-01",
+          "passage": "hundreds of millions of birds may stream across the sky in a single night en route to claim a territory, find a mate, build a nest and reproduce",
+          "supportLevel": "partial",
+          "score": 35
+        }
+      ]
+    },
+    {
+      "id": "c-artificial-lights-disorientation",
+      "text": "Artificial lights can reduce visibility and cause birds to be disoriented and divert off their migratory path.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "usatoday-2026-04-22",
+          "passage": "Reduce the visibility and cause the birds to be disoriented and divert off their migratory path.",
+          "supportLevel": "strong",
+          "score": 95
+        },
+        {
+          "sourceId": "yahoo-2026-05-01",
+          "passage": "Worst of all, it might get thrown off by artificial light at night—or not see glass surfaces during the day—and collide with a window to its death.",
+          "supportLevel": "partial",
+          "score": 65
+        }
+      ]
+    },
+    {
+      "id": "c-window-patterns-collision-prevention",
+      "text": "Adding patterns to windows can help prevent bird collisions with glass structures.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "usatoday-2026-04-22",
+          "passage": "To prevent these sometimes fatal encounters, dress up your widows. This can be a easily done by adding a patterned window film, a screen or netting or decals.",
+          "supportLevel": "strong",
+          "score": 95
+        },
+        {
+          "sourceId": "yahoo-2026-05-01",
+          "passage": "putting bird-friendly stickers on windows can help birds navigate urban environments safely",
+          "supportLevel": "partial",
+          "score": 75
+        }
+      ]
+    },
+    {
+      "id": "c-bexar-county-migration-event",
+      "text": "In Bexar County, Texas, an estimated 1,042,600 birds crossed the county overnight of April 21.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "usatoday-2026-04-22",
+          "passage": "In Bexar County, Texas – home to San Antonio – an estimated 1,042,600 birds crossed the county overnight of April 21, including painted bunting, great crested flycatcher, western kingbird, yellow-rumpled warbler and indigo bunting.",
+          "supportLevel": "strong",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "c-blackpoll-warbler-range",
+      "text": "The blackpoll warbler songbird can fly as far as from Alaska to the Amazon.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "usatoday-2026-04-22",
+          "passage": "The blackpoll warbler songbird can fly as far from Alaska to the Amazon.",
+          "supportLevel": "strong",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "c-monarch-migration-timing",
+      "text": "Monarch butterfly migration occurs during March, April, and May across the United States.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "khou-2026-02-24",
+          "passage": "During March, April, and May, millions of monarchs move northward from their overwintering grounds in Mexico, spreading across Texas, the Southeast and eventually into the Midwest and Northeast.",
+          "supportLevel": "strong",
+          "score": 95
+        },
+        {
+          "sourceId": "usatoday-2026-04-22",
+          "passage": "In the contiguous United States, peak spring bird migration runs approximately between March 1 and June 15, though some species migrate earlier or later.",
+          "supportLevel": "partial",
+          "score": 65
+        }
+      ]
+    },
+    {
+      "id": "c-monarch-multigenerational-relay",
+      "text": "Spring monarch migration is a multigenerational relay, unlike the single generation that migrated south in the previous fall.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "khou-2026-02-24",
+          "passage": "Unlike the single generation that made the long journey south the previous fall, the spring migration is a multigenerational relay.",
+          "supportLevel": "strong",
+          "score": 100
+        }
+      ]
+    },
+    {
+      "id": "c-milkweed-monarch-dependency",
+      "text": "Milkweed is the only plant monarchs lay their eggs on and the sole food source for their caterpillars.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "khou-2026-02-24",
+          "passage": "Drought reduces the growth and health of milkweed, the only plant monarchs lay their eggs on and the sole food source for their caterpillars.",
+          "supportLevel": "strong",
+          "score": 95
+        }
+      ]
+    },
+    {
+      "id": "c-drought-milkweed-impact",
+      "text": "Drought reduces the growth and health of milkweed, which lowers the number of butterflies that continue the migration northward.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "khou-2026-02-24",
+          "passage": "Drought reduces the growth and health of milkweed, the only plant monarchs lay their eggs on and the sole food source for their caterpillars. When milkweed is scarce, stressed, or stunted due to dry conditions, fewer larvae survive, which lowers the number of butterflies that continue the migration northward.",
+          "supportLevel": "strong",
+          "score": 95
+        }
+      ]
+    },
+    {
+      "id": "c-monarch-migration-distance",
+      "text": "The multigenerational monarch migration can span up to 3,000 miles over several months.",
+      "overallTrust": "Medium",
+      "evidence": [
+        {
+          "sourceId": "khou-2026-02-24",
+          "passage": "the multigenerational migration can span up to 3,000 miles, with generations continuing the trek over several months",
+          "supportLevel": "strong",
+          "score": 95
+        },
+        {
+          "sourceId": "yahoo-2026-05-01",
+          "passage": "As someone with an appallingly bad sense of direction, I'm floored by the fact that birds can travel tens of thousands of miles between their breeding grounds and wintering grounds and arrive at the right place most of the time.",
+          "supportLevel": "weaker",
+          "score": 15
+        }
+      ]
+    },
+    {
+      "id": "c-monarch-weather-impact",
+      "text": "Warm temperatures and favorable winds can accelerate monarch expansion, while late frosts or heavy storms can slow progress and reduce survival rates.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "khou-2026-02-24",
+          "passage": "Weather patterns play a critical role during this period; warm temperatures and favorable winds can accelerate their expansion, while late frosts or heavy storms can slow progress and reduce survival rates.",
+          "supportLevel": "strong",
+          "score": 95
+        }
+      ]
+    },
+    {
+      "id": "c-monarch-threats",
+      "text": "Urban development and declining milkweed availability continue to threaten monarch migration.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "khou-2026-02-24",
+          "passage": "But urban development and declining milkweed availability continue to threaten the migration, highlighting the importance of habitat conservation.",
+          "supportLevel": "strong",
+          "score": 95
+        }
+      ]
+    },
+    {
+      "id": "c-tree-swallow-arrival",
+      "text": "Tree Swallows arrived in March in the northeastern U.S. and are building nests with grasses and pine needles.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "yahoo-2026-05-01",
+          "passage": "The Tree Swallows arrived in March and are now building their nests with grasses and pine needles from the surrounding fields.",
+          "supportLevel": "strong",
+          "score": 95
+        }
+      ]
+    },
+    {
+      "id": "c-gnatcatcher-arrival",
+      "text": "Blue-gray Gnatcatchers arrived in April in the northeastern U.S.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "yahoo-2026-05-01",
+          "passage": "The Blue-gray Gnatcatchers followed in April.",
+          "supportLevel": "strong",
+          "score": 95
+        }
+      ]
+    },
+    {
+      "id": "c-oystercatcher-banding",
+      "text": "An American Oystercatcher observed at a local beach had been banded in a neighboring town in spring 2025 and hatched in 2024 or earlier.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "yahoo-2026-05-01",
+          "passage": "my bird was banded in a neighboring town in the spring of 2025 and had hatched in 2024 or earlier",
+          "supportLevel": "strong",
+          "score": 95
+        }
+      ]
+    },
+    {
+      "id": "c-bird-population-decline",
+      "text": "North America has lost approximately three billion birds since 1970.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "yahoo-2026-05-01",
+          "passage": "North America has lost some three billion birds since 1970.",
+          "supportLevel": "strong",
+          "score": 95
+        }
+      ]
+    },
+    {
+      "id": "c-bird-species-diversity",
+      "text": "More than 10,000 bird species exist today, making them the most diverse group of land vertebrates.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "yahoo-2026-05-01",
+          "passage": "More than 10,000 bird species exist today, which makes them the most diverse group of land vertebrates around.",
+          "supportLevel": "strong",
+          "score": 95
+        }
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t-1",
+      "date": "2026-02-24",
+      "sourceId": "khou-2026-02-24",
+      "stage": "Appears",
+      "shortNote": "First report of March-May monarch migration timing",
+      "claimId": "c-monarch-migration-timing"
+    },
+    {
+      "id": "t-2",
+      "date": "2026-02-24",
+      "sourceId": "khou-2026-02-24",
+      "stage": "Appears",
+      "shortNote": "First report of multigenerational spring migration relay",
+      "claimId": "c-monarch-multigenerational-relay"
+    },
+    {
+      "id": "t-3",
+      "date": "2026-02-24",
+      "sourceId": "khou-2026-02-24",
+      "stage": "Appears",
+      "shortNote": "Drought reduces milkweed growth affecting monarchs",
+      "claimId": "c-milkweed-monarch-dependency"
+    },
+    {
+      "id": "t-4",
+      "date": "2026-02-24",
+      "sourceId": "khou-2026-02-24",
+      "stage": "Appears",
+      "shortNote": "Drought stresses milkweed, reducing butterfly migration northward",
+      "claimId": "c-drought-milkweed-impact"
+    },
+    {
+      "id": "t-5",
+      "date": "2026-02-24",
+      "sourceId": "khou-2026-02-24",
+      "stage": "Appears",
+      "shortNote": "First report of 3,000-mile multigenerational migration span",
+      "claimId": "c-monarch-migration-distance"
+    },
+    {
+      "id": "t-6",
+      "date": "2026-02-24",
+      "sourceId": "khou-2026-02-24",
+      "stage": "Appears",
+      "shortNote": "First report of weather impact on monarch expansion",
+      "claimId": "c-monarch-weather-impact"
+    },
+    {
+      "id": "t-7",
+      "date": "2026-02-24",
+      "sourceId": "khou-2026-02-24",
+      "stage": "Appears",
+      "shortNote": "First report of urban development and milkweed decline threatening migration",
+      "claimId": "c-monarch-threats"
+    },
+    {
+      "id": "t-8",
+      "date": "2026-04-22",
+      "sourceId": "usatoday-2026-04-22",
+      "stage": "Appears",
+      "shortNote": "First report of March 1 to June 15 migration window",
+      "claimId": "c-spring-bird-migration-timing"
+    },
+    {
+      "id": "t-9",
+      "date": "2026-04-22",
+      "sourceId": "usatoday-2026-04-22",
+      "stage": "Appears",
+      "shortNote": "First report of 450-500 million birds migrating nightly",
+      "claimId": "c-nightly-migration-volume-450-500m"
+    },
+    {
+      "id": "t-10",
+      "date": "2026-04-22",
+      "sourceId": "usatoday-2026-04-22",
+      "stage": "Appears",
+      "shortNote": "First report of nocturnal migration at high altitudes",
+      "claimId": "c-nocturnal-migration-altitude"
+    },
+    {
+      "id": "t-11",
+      "date": "2026-04-22",
+      "sourceId": "usatoday-2026-04-22",
+      "stage": "Appears",
+      "shortNote": "First report of artificial lights disorienting birds",
+      "claimId": "c-artificial-lights-disorientation"
+    },
+    {
+      "id": "t-12",
+      "date": "2026-04-22",
+      "sourceId": "usatoday-2026-04-22",
+      "stage": "Appears",
+      "shortNote": "First report of window patterns preventing bird collisions",
+      "claimId": "c-window-patterns-collision-prevention"
+    },
+    {
+      "id": "t-13",
+      "date": "2026-04-22",
+      "sourceId": "usatoday-2026-04-22",
+      "stage": "Appears",
+      "shortNote": "First report of 1,042,600 birds crossing Bexar County",
+      "claimId": "c-bexar-county-migration-event"
+    },
+    {
+      "id": "t-14",
+      "date": "2026-04-22",
+      "sourceId": "usatoday-2026-04-22",
+      "stage": "Appears",
+      "shortNote": "First report of blackpoll warbler migration range",
+      "claimId": "c-blackpoll-warbler-range"
+    },
+    {
+      "id": "t-15",
+      "date": "2026-05-01",
+      "sourceId": "yahoo-2026-05-01",
+      "stage": "Appears",
+      "shortNote": "First report of 147 million birds prediction",
+      "claimId": "c-nightly-migration-volume-147m"
+    },
+    {
+      "id": "t-16",
+      "date": "2026-05-01",
+      "sourceId": "yahoo-2026-05-01",
+      "stage": "Appears",
+      "shortNote": "Tree Swallows arrived March, building nests with grasses and pine needles",
+      "claimId": "c-tree-swallow-arrival"
+    },
+    {
+      "id": "t-17",
+      "date": "2026-05-01",
+      "sourceId": "yahoo-2026-05-01",
+      "stage": "Appears",
+      "shortNote": "First report of Blue-gray Gnatcatchers arriving in April",
+      "claimId": "c-gnatcatcher-arrival"
+    },
+    {
+      "id": "t-18",
+      "date": "2026-05-01",
+      "sourceId": "yahoo-2026-05-01",
+      "stage": "Appears",
+      "shortNote": "American Oystercatcher banded spring 2025, hatched 2024 or earlier",
+      "claimId": "c-oystercatcher-banding"
+    },
+    {
+      "id": "t-19",
+      "date": "2026-05-01",
+      "sourceId": "yahoo-2026-05-01",
+      "stage": "Appears",
+      "shortNote": "First report of three billion bird loss since 1970",
+      "claimId": "c-bird-population-decline"
+    },
+    {
+      "id": "t-20",
+      "date": "2026-05-01",
+      "sourceId": "yahoo-2026-05-01",
+      "stage": "Appears",
+      "shortNote": "First report of 10,000+ bird species diversity claim",
+      "claimId": "c-bird-species-diversity"
+    }
+  ]
+}

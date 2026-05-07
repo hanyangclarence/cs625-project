@@ -9,6 +9,7 @@ export const artemis: Topic = {
       outlet: 'NASA',
       date: '2026-04-04',
       articleTitle: 'Artemis II completes lunar flyby, sets distance record from Earth',
+      url: 'https://www.nasa.gov/mission/artemis-ii/',
       imageUrl:
         'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=800&q=60',
       matchTag: 'shared-facts',
@@ -23,6 +24,7 @@ export const artemis: Topic = {
       outlet: 'AP News',
       date: '2026-04-05',
       articleTitle: 'NASA says Artemis II crew completed lunar flyby overnight',
+      url: 'https://apnews.com/hub/space',
       imageUrl:
         'https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?auto=format&fit=crop&w=800&q=60',
       matchTag: 'shared-facts',
@@ -38,6 +40,7 @@ export const artemis: Topic = {
       outlet: 'The Guardian',
       date: '2026-04-06',
       articleTitle: 'Artemis II: what the lunar flyby means for the return-to-Moon timeline',
+      url: 'https://www.theguardian.com/science/space',
       imageUrl:
         'https://images.unsplash.com/photo-1454789548928-9efd52dc4031?auto=format&fit=crop&w=800&q=60',
       matchTag: 'framing-gaps',
@@ -53,6 +56,7 @@ export const artemis: Topic = {
       outlet: 'NPR',
       date: '2026-04-18',
       articleTitle: "Weeks after Artemis II's flyby, questions about reusability",
+      url: 'https://www.npr.org/sections/space/',
       imageUrl:
         'https://images.unsplash.com/photo-1502134249126-9f3755a50d78?auto=format&fit=crop&w=800&q=60',
       matchTag: 'evidence-support',

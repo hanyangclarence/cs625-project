@@ -1,0 +1,240 @@
+% $Id: template.tex 11 2007-04-03 22:25:53Z jpeltier $
+
+\documentclass{vgtc}                          % final (conference style)
+% \documentclass[review]{vgtc}                 % review
+%\documentclass[widereview]{vgtc}             % wide-spaced review
+%\documentclass[preprint]{vgtc}               % preprint
+%\documentclass[electronic]{vgtc}             % electronic version
+
+%% Uncomment one of the lines above depending on where your paper is
+%% in the conference process. ``review'' and ``widereview'' are for review
+%% submission, ``preprint'' is for pre-publication, and the final version
+%% doesn't use a specific qualifier. Further, ``electronic'' includes
+%% hyperreferences for more convenient online viewing.
+
+%% Please use one of the ``review'' options in combination with the
+%% assigned online id (see below) ONLY if your paper uses a double blind
+%% review process. Some conferences, like IEEE Vis and InfoVis, have NOT
+%% in the past.
+
+%% Figures should be in CMYK or Grey scale format, otherwise, colour 
+%% shifting may occur during the printing process.
+
+%% it is recomended to use ``\cref{sec:bla}'' instead of ``Fig.~\ref{sec:bla}''
+\graphicspath{{figures/}{pictures/}{images/}{./}} % where to search for the images
+
+\usepackage{times}                     % we use Times as the main font
+\usepackage[T1]{fontenc}               % change the front
+\renewcommand*\ttdefault{txtt}         % a nicer typewriter font
+
+\newcommand{\methodsubhead}[1]{\vspace{0.55em}\noindent\textbf{#1.}\ }
+ % use methodsubhead
+
+%% We encourage the use of mathptmx for consistent usage of times font
+%% throughout the proceedings. However, if you encounter conflicts
+%% with other math-related packages, you may want to disable it.
+\usepackage{mathptmx}                  % use matching math font
+
+%% modify space between graph and content
+\setlength{\textfloatsep}{12pt plus 2pt minus 2pt}
+\setlength{\dbltextfloatsep}{15pt plus 2pt minus 2pt}
+\setlength{\intextsep}{12pt plus 2pt minus 2pt}
+\setlength{\abovecaptionskip}{5pt}
+\setlength{\belowcaptionskip}{6pt}
+
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\dbltopfraction}{0.9}
+\renewcommand{\textfraction}{0.08}
+\renewcommand{\floatpagefraction}{0.8}
+\renewcommand{\dblfloatpagefraction}{0.8}
+
+
+%% If you are submitting a paper to a conference for review with a double
+%% blind reviewing process, please replace the value ``0'' below with your
+%% OnlineID. Otherwise, you may safely leave it at ``0''.
+\onlineid{0}
+
+%% declare the category of your paper, only shown in review mode
+\vgtccategory{Research}
+
+%% allow for this line if you want the electronic option to work properly
+\vgtcinsertpkg
+
+%% In preprint mode you may define your own headline. If not, the default IEEE copyright message will appear in preprint mode.
+%\preprinttext{To appear in an IEEE VGTC sponsored conference.}
+
+%% This adds a link to the version of the paper on IEEEXplore
+%% Uncomment this line when you produce a preprint version of the article 
+%% after the article receives a DOI for the paper from IEEE
+%\ieeedoi{xx.xxxx/TVCG.201x.xxxxxxx}
+
+
+%% Paper title.
+
+\title{NewsLens: Visualization + AI for Societal Challenges Application}
+
+%% This is how authors are specified in the conference style
+
+%% Author and Affiliation (single author).
+%%\author{Roy G. Biv\thanks{e-mail: roy.g.biv@aol.com}}
+%%\affiliation{\scriptsize Allied Widgets Research}
+
+%% Author and Affiliation (multiple authors with single affiliations).
+\author{Han Yang %
+\and Xiangye Lin %
+\and Yuang Zhou}
+\affiliation{\scriptsize UMass Amherst\\
+\scriptsize \{hanyang, xiangyelin, yuazhou\}@umass.edu}
+
+%% Author and Affiliation (multiple authors with multiple affiliations)
+% \author{Roy G. Biv\thanks{e-mail: roy.g.biv@aol.com}\\ %
+%         \scriptsize Starbucks Research %
+% \and Ed Grimley\thanks{e-mail: ed.grimley@aol.com}\\ %
+%      \scriptsize Grimley Widgets, Inc. %
+% \and Martha Stewart\thanks{e-mail: martha.stewart@marthastewart.com}\\ %
+%      \parbox{1.4in}{\scriptsize \centering Martha Stewart Enterprises \\ Microsoft Research}}
+
+%% A teaser figure can be included as follows
+% \teaser{
+%   \centering
+%   \includegraphics[width=\linewidth]{CypressView}
+%   \caption{In the Clouds: Vancouver from Cypress Mountain.}
+%   \label{fig:teaser}
+% }
+
+%% Abstract section.
+\abstract{
+    The increasing volume and diversity of online news have made it difficult for non-expert readers to interpret information reliably, particularly when multiple sources present conflicting accounts of the same event. Differences in framing, emphasis, and selective use of evidence can obscure underlying agreement or disagreement, while supporting information is often scattered across articles and not explicitly connected to key claims. Existing tools, such as bias labels and fact-checking systems, provide high-level summaries but typically do not support transparent, user-driven comparison or enable users to verify how conclusions are formed. 
+
+In this work, we present \textit{NewsLens}, an interactive system designed to support transparent and user-steerable news analysis through claim-level comparison and evidence inspection. The system extracts and aligns claims across multiple news sources, links each claim to supporting passages in the original articles, and provides coordinated views for comparison, verification, and temporal exploration. We adopt a human-centered design approach that emphasizes interpretability, traceability, and user control rather than automated truth classification.
+
+To evaluate the system, we conduct a task-based user study with college-age participants, focusing on three core tasks: comparing conflicting coverage, verifying claim-level support, and analyzing how claims evolve over time. Preliminary results suggest that structuring information around claims and exposing underlying evidence can improve users’ ability to identify differences across sources, assess the strength of support, and form more balanced interpretations. 
+
+This work contributes a novel interaction design for AI-assisted news sensemaking that integrates claim alignment, evidence grounding, and multi-view exploration into a unified workflow. By enabling users to move from passive consumption to active analysis, our approach highlights the potential of transparent, human-AI collaborative systems for improving understanding in complex information environments.
+
+} % end of abstract
+
+%% Keywords that describe your work. Will show as 'Index Terms' in journal
+%% please capitalize first letter and insert punctuation after last keyword.
+\keywords{Misinformation Analysis, News Visualization, Human-AI Interaction, Sensemaking, Evidence Transparency.}
+
+%% Copyright space is enabled by default as required by guidelines.
+%% It is disabled by the 'review' option or via the following command:
+\nocopyrightspace
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% START OF THE PAPER %%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%% The ``\maketitle'' command must be the first command after the
+%% ``\begin{document}'' command. It prepares and prints the title block.
+
+%% the only exception to this rule is the \firstsection command
+\firstsection{Introduction}
+
+\maketitle
+
+%% \section{Introduction} %for journal use above \firstsection{..} instead
+The rapid growth of online news platforms and social media has significantly increased both the availability and complexity of information. For any given event, readers are often exposed to multiple articles that present different perspectives, emphasize different aspects, and rely on varying forms of evidence. While this diversity has the potential to enrich understanding, it also introduces substantial challenges for non-expert readers, who must interpret conflicting information without formal training or structured tools. In practice, users are required to manually read, compare, and synthesize content across sources, which can be time-consuming and cognitively demanding.
+
+These challenges are further amplified in highly dynamic and polarized information environments, where differences between sources are not always due to factual disagreement, but rather differences in framing, emphasis, or selective reporting. As a result, users may struggle to distinguish between genuine conflicts in information and variations in presentation. Without clear support for comparison and verification, many readers resort to heuristics such as relying on headlines, trusting familiar sources, or following prior beliefs. This often leads to confusion, passive consumption, and unreliable judgments, particularly when the stakes of interpretation are high.
+
+A central difficulty in this process is that current news interfaces are not designed to support structured sensemaking. Key information is embedded in long-form articles and expressed differently across sources, making it difficult to identify comparable claims. At the same time, the evidence supporting these claims—such as quotes, data, or references—is often implicit, incomplete, or scattered throughout the text. Users must therefore invest significant effort to locate relevant passages, interpret their meaning, and assess their credibility. This lack of structure makes it difficult to answer fundamental questions such as: What do different sources agree on? Where do they differ? And how well-supported are those differences?
+
+Existing tools provide only partial solutions. Fact-checking systems attempt to verify individual claims, but they typically present binary or summarized conclusions without exposing the underlying reasoning process. Similarly, bias labeling tools classify sources or articles based on ideological alignment, but they do not support direct comparison of content or enable users to examine how information is constructed. News aggregation platforms make multiple sources accessible, yet they largely preserve the document-level structure of articles and offer limited support for cross-source analysis. Collectively, these approaches prioritize summarization and classification over user-driven exploration and understanding.
+
+In response to these limitations, we identify a key gap in current systems: the lack of support for \textit{transparent, claim-centered comparison and evidence-based verification}. Rather than providing users with precomputed judgments, there is a need for tools that enable users to actively explore information, understand how claims are formed, and evaluate the strength of supporting evidence. Addressing this gap requires shifting from document-level interfaces to interaction designs that foreground claims as the primary unit of analysis.
+
+To address this challenge, we present \textit{NewsLens}, an interactive system designed to support user-centered sensemaking through structured comparison and transparent evidence inspection. NewsLens organizes information around three core capabilities. First, it performs \textbf{claim-based comparison} by extracting and aligning semantically similar claims across multiple news sources, allowing users to directly compare how different outlets describe the same event. Second, it enables \textbf{evidence inspection} by linking each claim to supporting passages in the original articles and providing indicators of support strength, making the underlying evidence visible and traceable. Third, it supports \textbf{exploratory analysis} through multiple coordinated views, including cross-source comparison, evidence tracing, and temporal claim timelines, which together allow users to examine information from complementary perspectives.
+
+These features are integrated into a coherent workflow that supports progressive sensemaking. Users begin by identifying differences and commonalities across sources, then inspect the evidence behind specific claims, and finally explore how information evolves over time. By structuring interaction in this way, the system reduces cognitive load while maintaining flexibility, enabling users to engage with complex information without being overwhelmed.
+
+We implement NewsLens as a mobile-style interactive prototype and evaluate it through a task-based user study with college-age participants. The evaluation focuses on three representative tasks: comparing conflicting coverage across sources, verifying whether a claim is sufficiently supported, and analyzing how claims evolve over time. We collect both quantitative measures, such as task completion and accuracy, and qualitative feedback on user experience and perceived usefulness. Through this evaluation, we aim to assess whether a claim-centered, evidence-grounded design can improve users’ ability to interpret and reason about news.
+
+This work makes three primary contributions. First, we introduce a \textbf{claim-centered interaction paradigm} that restructures news content into comparable units, enabling more efficient and meaningful cross-source analysis. Second, we propose an \textbf{evidence-grounded interface} that enhances transparency by explicitly linking claims to their supporting text and exposing variations in support strength. Third, we present a \textbf{multi-view exploration framework} that integrates comparison, verification, and temporal reasoning into a unified workflow. Together, these contributions demonstrate how human-AI collaborative systems can support more informed, critical, and transparent engagement with complex information environments.
+
+\section{Related Work}
+
+Prior work on news comparison and media-bias awareness shows that interface design can help readers encounter more than one framing of the same event. NewsCube~\cite{Park_2009} is particularly relevant because it groups articles by aspect to mitigate media bias and encourages contrastive reading. NewsLens adopts the same commitment to multi-perspective inspection, but shifts from article clustering toward claim-level alignment with explicit comparison lenses and source-grounded task flow. Systems such as Dispute Finder~\cite{Ennals_2010} also demonstrate the value of making disagreement visible in context. Our design extends this idea by comparing multiple outlets around the same claim rather than only flagging disputed statements.
+
+The second line of work concerns evidence-grounded explanations and temporal interpretation. Explanatory debugging argues that users benefit when system reasoning is exposed in inspectable form~\cite{Kulesza_2015}, while evidence-aware verification models such as DeClarE show why credibility judgments should be grounded in supporting text rather than predicted in isolation~\cite{Popat_2018}. Temporal visualization research further shows how event order, continuity, and change can be made legible without requiring users to manually reconstruct a narrative~\cite{Tanahashi_2012,Fulda_2016}. These ideas motivate NewsLens as a workflow that surfaces evidence and chronology as reader-facing artifacts rather than hidden model internals.
+
+
+\section{Solution and Method}
+\subsection{Interactive Prototype Design}
+
+Figure~\ref{fig:feature-functions} summarizes the three task-facing interface views using the annotated presentation figures. They are shown here as the user-visible surface of the system; the backend orchestration described in the next subsection is a planned architecture that would populate and validate these views.
+
+\begin{figure*}[!t]
+  \centering
+  \includegraphics[width=0.95\textwidth]{feature_functions_overview.pdf}
+  \caption{Task-facing interface views from the project presentation assets. The three panels correspond to Cross-Source Comparison, Evidence Trace, and Claim Timeline and together show the user-visible surface that the planned backend would populate.}
+  \label{fig:feature-functions}
+\end{figure*}
+
+NewsLens is implemented as a mobile-style web prototype in React, TypeScript, Vite, Tailwind CSS, React Router, and Lucide icons. The interface is built around one example event, the Artemis II lunar flyby, so that users can move through one coherent comparison scenario rather than switch across unrelated topics. The design goal is to help a reader answer three linked questions: what sources agree on, what evidence supports a selected claim, and how the claim develops over time.
+
+The solution is intentionally front-end first. The Cross-Source Comparison view places aligned claims from multiple outlets in one screen and lets users switch between shared facts, framing gaps, and evidence support. The Evidence Trace view grounds a selected claim in source-linked passages and support cues without implying a final true/false verdict. The Claim Timeline view keeps chronology compact by focusing on claim-level evolution instead of a full narrative dashboard. Together these views reduce a broad news-comparison problem into a smaller sequence of inspectable actions.
+
+\subsection{Processing Pipeline}
+
+Figure~\ref{fig:system-design} summarizes the planned backend pipeline that supports source collection, validation, workspace construction, and task-specific outputs. It also highlights the human feedback and expert review loops that are intended to refine the system over time.
+
+
+\methodsubhead{Backend Design}
+Beyond the current front-end prototype, we propose a backend pipeline that treats news comparison as a tool-augmented, human-auditable workflow. A user topic is first routed to an agentic orchestrator, which dispatches parallel crawler agents to collect candidate articles from multiple outlets. The collected content is then processed through LLM-based cleaning and normalization, followed by source inspection, author/date/reference checking, and web-search-assisted verification. To reduce brittle one-pass decisions, the verification stage is designed as a ReAct-style tool loop~\cite{Yao_2023} in which the system can iteratively request missing metadata, inspect linked references, and reconcile conflicting evidence before committing outputs downstream. Figure~\ref{fig:system-design} shows this proposed architecture, including human feedback and expert audit loops that feed back into refinement.
+
+The backend is organized around two workspace levels. An \emph{article workspace} stores source name, title, author, publication date, extracted references, verified supporting passages, source-validity notes, source-evaluation logs, and a per-article summary. Multiple article workspaces are then clustered into an \emph{event workspace}, which stores a unified event title, aligned claims, comparison lenses, an evidence index, a timeline index, and an aggregated event summary. These shared structures let later task pipelines reuse verified material instead of recomputing each view independently.
+
+\methodsubhead{Cross-Source Comparison}
+Cross-Source Comparison is the primary pipeline and the most important task in the system. Starting from user topic input, parallel crawlers fetch candidate reports, LLM cleaning normalizes formatting and terminology, and metadata/reference checks extract author, date, and cited links. A source inspector evaluates outlet reliability and obvious validity signals, while web verification and the ReAct-style loop check whether key entities, mission facts, and linked references cohere across sources. Once candidate articles have been validated, the system creates article workspaces, clusters them under a shared event, extracts key claims, and aligns semantically similar claims across sources. Comparison lenses such as shared facts, framing gaps, and evidence support are then generated so that the front-end can expose different cross-source readings without forcing a single credibility conclusion.
+
+\methodsubhead{Evidence Trace}
+Evidence Trace is derived from the verified workspaces produced upstream. Instead of re-crawling the web, the system reuses extracted references, supporting passages, and source-validity notes already stored in article workspaces. For a selected claim, the pipeline maps supporting snippets to source passages, assigns support strength, and prepares trace-to-source evidence items for display. This makes the evidence view comparatively simple: once the workspace is built, the main work is ranking and presenting already verified passages in a way that keeps support interpretable rather than opaque.
+
+\methodsubhead{Claim Timeline}
+Claim Timeline also builds on the shared event workspace. A time inspector extracts and normalizes timestamps from collected articles, and a same-event check determines whether later mentions refer to the same claim thread. The system then orders reports by publication sequence and uses an LLM judgment step to assign stage tags such as first appearance, pickup, supplement, or correction. The resulting timeline index is rendered as a compact claim-evolution view that helps the user see how the same claim changes over time without leaving the broader event context.
+
+\begin{figure*}[!t]
+  \centering
+  \includegraphics[width=0.95\textwidth]{system_design.pdf}
+  \caption{Proposed agentic backend architecture for NewsLens. The planned system combines orchestration, parallel collection, tool-augmented verification, workspace construction, and human-in-the-loop refinement before producing task-facing outputs.}
+  \label{fig:system-design}
+\end{figure*}
+
+\methodsubhead{Human Feedback and Expert Review}
+The proposed backend also includes explicit human-in-the-loop refinement. Direct user feedback can be collected at the event or page level through simple positive/negative signals and short judgments about usefulness, trust, or confusion. In parallel, expert review can audit source validity, claim alignment quality, evidence support quality, and timeline ordering or stage tags. We also plan A/B testing over prompt variants, verification-tool orchestration choices, and source-checking strategies. These mechanisms are not presented here as completed results; they are part of the planned quality-improvement loop for refining prompts, scoring logic, and orchestration policies.
+
+\methodsubhead{Participants, Data Collection, and Procedure}
+The planned user study will recruit 3--5 college-age news readers who regularly consume online news and roughly match the intended target group for the interface. Before the tasks, participants will answer brief background questions about news habits, topic familiarity, and prior use of AI-supported information tools. They will then complete three tasks with the prototype in sequence: compare cross-source coverage, inspect whether a selected claim is sufficiently supported, and review the claim timeline to write a balanced takeaway. During each session we will record task completion, time on task, decision accuracy, interaction notes, and short post-task feedback so that the evaluation captures both measurable performance and confusion breakdowns.
+
+\section{Evaluation}
+
+Our evaluation combines user-task metrics with system-level audit metrics. Task completion rate is the proportion of attempted tasks that participants finish, and median time on task is the median completion time among successful trials. Framing-vs.-factual-conflict judgment accuracy measures whether users correctly separate framing differences from genuine factual disagreement in the comparison view. Unsupported sharing decision rate captures the key failure mode in the Evidence Trace task: how often participants would still share a claim despite weak or insufficient support. Balanced takeaway rubric score is assigned by expert raters on completeness, grounding, and neutrality, and ordering accuracy measures whether users correctly reconstruct the sequence of reporting events in the timeline task.
+
+System-level metrics evaluate whether the planned backend surfaces and organizes information reliably. Evidence Recall@3 measures how often the top three surfaced evidence items contain the gold relevant supporting passage for a claim, making the top-$k$ retrieval definition explicit. Reference coverage rate is the fraction of article workspaces that contain at least one extracted reference. Source-validity agreement compares the output of the source inspector with expert judgments. Event clustering consistency measures whether collected articles are grouped under the correct event workspace, and timeline stage agreement compares LLM-generated stage tags against expert labels. Together these metrics let us evaluate both user performance and the reliability of the pipeline that supports the interface.
+
+\section{Results, Discussion, and Future Work}
+
+At this stage, we do not claim completed empirical results or a finished backend deployment. Instead, the current milestone should be understood as a prototype-and-evaluation-planning contribution. The most concrete outcome so far is a coherent three-view front-end prototype that operationalizes the news comparison problem as a sequence of user-steerable actions: comparing claims across sources, inspecting evidence behind a selected claim, and reviewing how claims evolve over time. In parallel, we have also specified a planned backend pipeline that explains how these views could be populated through source collection, validation, workspace construction, and task-specific output generation. Together, these deliverables establish a clearer foundation for implementation and evaluation than a single static mockup or a purely conceptual system sketch.
+
+Even without full empirical results, the current design process already suggests several early takeaways. First, decomposing the problem into comparison, evidence, and timeline views creates a more legible workflow than collapsing credibility judgments into one screen or one summary output. This structure helps separate different reasoning goals: identifying framing differences, checking support, and understanding temporal development. Second, the prototype iteration made clear that the evidence and timeline views only remain interpretable when they inherit validated references, source metadata, and claim organization from a shared workspace. This observation strongly supports the planned backend architecture, since the usefulness of downstream views depends not only on interface design but also on the reliability of upstream claim alignment and verification. Third, the process highlighted that transparency is more important than producing an overly authoritative AI verdict; surfacing evidence, sources, and temporal context appears more aligned with the goal of supporting human judgment.
+
+At the same time, the current artifact has several important limitations. The implemented system still focuses on front-end interaction logic, while the agentic backend, A/B testing framework, source-checking loops, and expert-audit processes remain part of the next phase. As a result, the proposed metrics in the evaluation section should be interpreted as a validation roadmap rather than reported outcomes. There are also clear design risks that need further testing, including possible information overload, over-trust in AI-generated structure, and errors introduced by imperfect claim alignment or weak evidence retrieval. These risks are especially important because a system that appears organized and credible can still mislead users if its internal grounding is weak.
+
+Future work will therefore focus on three directions. First, we will implement the planned backend pipeline, including crawler orchestration, metadata and reference validation, article and event workspace construction, and task-specific generation for comparison, evidence, and timeline outputs. Second, we will conduct the proposed user study to examine whether the three-view workflow improves cross-source reasoning, evidence-based judgment, and balanced interpretation for non-expert readers. Third, we will use human feedback, A/B testing, and expert review to refine prompt design, verification policies, and support-scoring logic. These next steps will allow us to evaluate not only whether the interface is usable, but also whether the broader human-AI workflow is reliable enough to support transparent news sensemaking in practice.
+
+
+
+%% if specified like this the section will be committed in review mode
+
+%\bibliographystyle{abbrv}
+\bibliographystyle{abbrv-doi}
+%\bibliographystyle{abbrv-doi-narrow}
+%\bibliographystyle{abbrv-doi-hyperref}
+%\bibliographystyle{abbrv-doi-hyperref-narrow}
+
+\bibliography{reference}
+\end{document}

@@ -1,0 +1,92 @@
+{
+  "id": "artemis-ii-lunar-flyby",
+  "title": "Artemis II lunar flyby",
+  "sources": [
+    {
+      "id": "nasa-2026-04-04",
+      "outlet": "NASA",
+      "date": "2026-04-04",
+      "articleTitle": "Artemis II completes lunar flyby",
+      "imageUrl": null,
+      "matchTag": "shared-facts",
+      "matchScore": 97,
+      "trustScore": 87,
+      "trustLabel": "High",
+      "summary": "NASA reports Orion's flyby and a new crewed-distance record.",
+      "rubric": {
+        "references": 28,
+        "authority": 30,
+        "clarity": 26
+      }
+    },
+    {
+      "id": "ap-2026-04-05",
+      "outlet": "AP News",
+      "date": "2026-04-05",
+      "articleTitle": "NASA says Artemis II crew completed lunar flyby overnight",
+      "imageUrl": null,
+      "matchTag": "shared-facts",
+      "matchScore": 94,
+      "trustScore": 78,
+      "trustLabel": "High",
+      "summary": "AP wire confirms NASA flyby and approximate distance.",
+      "rubric": {
+        "references": 22,
+        "authority": 24,
+        "clarity": 24
+      }
+    }
+  ],
+  "claims": [
+    {
+      "id": "c-flyby",
+      "text": "Artemis II completed its crewed lunar flyby and set a new crewed-distance record from Earth.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "nasa-2026-04-04",
+          "passage": "Orion executed the outbound powered flyby burn at 02:14 UTC, passing approximately 7,400 km above the lunar far side.",
+          "supportLevel": "strong",
+          "score": 96
+        },
+        {
+          "sourceId": "ap-2026-04-05",
+          "passage": "NASA said the four-person Artemis II crew completed a lunar flyby overnight, reaching a record distance from Earth of roughly 400,000 km.",
+          "supportLevel": "strong",
+          "score": 91
+        }
+      ]
+    },
+    {
+      "id": "c-distance",
+      "text": "The mission reached roughly 400,000 km from Earth.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "nasa-2026-04-04",
+          "passage": "The crew set a new distance record from Earth at peak range 401,250 km.",
+          "supportLevel": "strong",
+          "score": 95
+        }
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t-1",
+      "date": "2026-04-04",
+      "sourceId": "nasa-2026-04-04",
+      "stage": "Appears",
+      "shortNote": "First NASA release.",
+      "claimId": "c-flyby"
+    },
+    {
+      "id": "t-2",
+      "date": "2026-04-05",
+      "sourceId": "ap-2026-04-05",
+      "stage": "Picked up",
+      "shortNote": "AP wire mirrors NASA lede.",
+      "claimId": "c-flyby"
+    }
+  ]
+}

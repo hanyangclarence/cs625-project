@@ -1,0 +1,23 @@
+notes: |
+  Stricter variant — biases toward "weaker" when figures don't match exactly. Used to
+  sweep how aggressively the model demotes partial matches.
+prompt_override: |
+  For one canonical claim and one news article, find the single best supporting passage in the article.
+
+  Output a JSON object:
+
+  ```
+  {
+    "passage": "verbatim span from the article body, or empty string if no good support",
+    "supportLevel": "strong" | "partial" | "weaker",
+    "score": int 0..100,
+    "rationale": "one short sentence"
+  }
+  ```
+
+  STRICT INTERPRETATION:
+  - Use `strong` ONLY if every named entity AND every numeric figure in the claim appears verbatim in the passage.
+  - If even one figure or named entity is missing or differs, the level is at most `partial`.
+  - If the passage only thematically relates without restating the specific assertion, mark it `weaker`.
+  - Empty passage if there is no genuine support; never invent.
+  - Output JSON only.

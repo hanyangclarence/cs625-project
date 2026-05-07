@@ -1,0 +1,330 @@
+{
+  "id": "trump-on-iran-war",
+  "title": "Trump on Iran war",
+  "sources": [
+    {
+      "id": "cbsnews-2026-05-06",
+      "outlet": "CBSNEWS",
+      "date": "2026-05-06",
+      "articleTitle": "Live Updates: Trump threatens Iran strikes, says too soon for new direct talks after reporting \"great progress\"",
+      "url": "https://www.cbsnews.com/live-updates/iran-war-trump-progress-peace-deal-strait-of-hormuz/",
+      "imageUrl": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/05/06/b5d96fa6-aa76-41d7-baba-c266870b1028/thumbnail/1200x630/ba35dab20b8b1533255096f68ffbe3a2/uss-george-hw-bush-iran-war.jpg",
+      "matchTag": "framing-gaps",
+      "matchScore": 78,
+      "trustScore": 62,
+      "trustLabel": "High",
+      "summary": "President Trump threatened Iran with intensified military strikes if it rejects a peace deal while announcing a pause in Project Freedom, a U.S. operation to guide ships through the Strait of Hormuz, citing great progress in Pakistan-brokered negotiations. The pause came after Iran attacked vessels and U.S. Gulf allies in response to the operation's launch, and multiple international actors including France, China, and Pakistan engaged in diplomatic efforts regarding the conflict and regional maritime security.",
+      "rubric": {
+        "references": 28,
+        "authority": 16,
+        "clarity": 12
+      }
+    },
+    {
+      "id": "foxnews-2026-05-06",
+      "outlet": "FOXNEWS",
+      "date": "2026-05-06",
+      "articleTitle": "Live Updates: Trump temporarily halts Project Freedom in Strait of Hormuz, cites progress toward Iran deal",
+      "url": "https://www.foxnews.com/live-news/iran-war-news-trump-strait-hormuz-oil-prices-project-freedom-may-6",
+      "imageUrl": "https://assets.foxnews.com/liveblog/fn/prod/images/2026/05/bbbc0824510fbfb6a301c674b54fc3dd.jpg",
+      "matchTag": "framing-gaps",
+      "matchScore": 65,
+      "trustScore": 69,
+      "trustLabel": "High",
+      "summary": "President Trump pauses Project Freedom, a U.S. military operation securing ship transit through the Strait of Hormuz, citing progress toward a nuclear agreement with Iran while maintaining a naval blockade. The pause comes as negotiations advance on a potential one-page memorandum of understanding involving Iran halting nuclear enrichment in exchange for sanctions relief.",
+      "rubric": {
+        "references": 28,
+        "authority": 16,
+        "clarity": 18
+      }
+    },
+    {
+      "id": "usatoday-2026-05-06",
+      "outlet": "USATODAY",
+      "date": "2026-05-06",
+      "articleTitle": "Trump says bombing will resume if Iran doesn't agree to peace",
+      "url": "https://www.usatoday.com/story/news/world/2026/05/06/iran-war-ceasefire-strait-hormuz-updates--live/89955261007/",
+      "imageUrl": "https://www.usatoday.com/gcdn/authoring/authoring-images/2026/05/05/USAT/89939346007-20260504-t-131441-z-1788863446-rc-231-laq-5804-rtrmadp-3-irancrisis.JPG?crop=5495,3093,x0,y108&width=3200&height=1802&format=pjpg&auto=webp",
+      "matchTag": "shared-facts",
+      "matchScore": 92,
+      "trustScore": 67,
+      "trustLabel": "High",
+      "summary": "President Trump paused military operations to reopen the Strait of Hormuz and warned Iran that bombing would resume at higher intensity if it does not agree to U.S. peace terms and allow commercial shipping. The conflict, which began February 28 with a ceasefire since April 7, involves ongoing tensions over Iran's nuclear program, Israeli strikes on Lebanon and healthcare workers, and regional shipping disruptions.",
+      "rubric": {
+        "references": 28,
+        "authority": 16,
+        "clarity": 16
+      }
+    }
+  ],
+  "claims": [
+    {
+      "id": "c-trump-iran-peace-ultimatum",
+      "text": "President Trump threatened Iran with military strikes if it does not accept a peace framework, pausing military operations to allow negotiations.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "usatoday-2026-05-06",
+          "passage": "Trump said on social media the war that began Feb. 28, with a ceasefire since April 7, could end if Iran agrees to U.S. terms and allows commercial shipping through the Strait of Hormuz. But he added if Tehran doesn't agree, bombing would resume \"at a much higher level and intensity.\"",
+          "supportLevel": "strong",
+          "score": 95
+        },
+        {
+          "sourceId": "cbsnews-2026-05-06",
+          "passage": "President Trump threatened Iran on Wednesday with \"higher level\" military strikes if it doesn't accept a peace deal, but he says it's \"too soon\" for new direct talks with Iranian officials in Pakistan after reporting \"great progress\" in negotiations to end the war.",
+          "supportLevel": "strong",
+          "score": 95
+        },
+        {
+          "sourceId": "foxnews-2026-05-06",
+          "passage": "If they don't agree, the bombing starts, and it will be, sadly, at a much higher level and intensity than it was before.",
+          "supportLevel": "partial",
+          "score": 65
+        }
+      ]
+    },
+    {
+      "id": "c-project-freedom-pause",
+      "text": "The U.S. military operation Project Freedom to secure the Strait of Hormuz was temporarily paused.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "usatoday-2026-05-06",
+          "passage": "His comments come after he paused \"Project Freedom,\" an effort launched Monday to move U.S. commercial vessels through the critical shipping channel.",
+          "supportLevel": "strong",
+          "score": 95
+        },
+        {
+          "sourceId": "cbsnews-2026-05-06",
+          "passage": "Mr. Trump put Project Freedom on pause Tuesday night, saying it was to see if \"a Complete and Final Agreement\" to end the war with Iran could be nailed down amid what he called \"great progress\" in negotiations brokered by Pakistan.",
+          "supportLevel": "strong",
+          "score": 95
+        },
+        {
+          "sourceId": "foxnews-2026-05-06",
+          "passage": "President Donald Trump said Tuesday that \"Project Freedom,\" the U.S. military effort to secure ship movement through the Strait of Hormuz, will be temporarily paused as \"Great Progress\" has been made towards a deal with Iran.",
+          "supportLevel": "strong",
+          "score": 95
+        }
+      ]
+    },
+    {
+      "id": "c-m-t-hasna-disabled",
+      "text": "U.S. forces disabled the Iranian-flagged oil tanker M/T Hasna by firing a 20mm cannon.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "usatoday-2026-05-06",
+          "passage": "When the Hasna's crew \"failed to comply with repeated warnings,\" a Navy F/A-18 Super Hornet fighter jet fired several rounds of a 20mm cannon gun into the oil tanker's rudder and \"disabled\" it, according to the statement.",
+          "supportLevel": "strong",
+          "score": 95
+        },
+        {
+          "sourceId": "cbsnews-2026-05-06",
+          "passage": "After Hasna's crew failed to comply with repeated warnings, U.S. forces disabled the tanker's rudder by firing several rounds from the 20mm cannon gun of a U.S. Navy F/A-18 Super Hornet launched from USS Abraham Lincoln (CVN 72)",
+          "supportLevel": "strong",
+          "score": 95
+        },
+        {
+          "sourceId": "foxnews-2026-05-06",
+          "passage": "After Hasna's crew failed to comply with repeated warnings, U.S. forces disabled the tanker's rudder by firing several rounds from the 20mm cannon gun of a U.S. Navy F/A-18 Super Hornet launched from USS Abraham Lincoln (CVN 72)",
+          "supportLevel": "strong",
+          "score": 95
+        }
+      ]
+    },
+    {
+      "id": "c-war-timeline",
+      "text": "A war began on February 28 with a ceasefire in effect since April 7.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "usatoday-2026-05-06",
+          "passage": "Trump said on social media the war that began Feb. 28, with a ceasefire since April 7, could end if Iran agrees to U.S. terms and allows commercial shipping through the Strait of Hormuz.",
+          "supportLevel": "strong",
+          "score": 95
+        },
+        {
+          "sourceId": "cbsnews-2026-05-06",
+          "passage": "The price of regular gas has jumped 52%, or $1.56 per gallon, since the start of the Iran war in late February",
+          "supportLevel": "partial",
+          "score": 65
+        },
+        {
+          "sourceId": "foxnews-2026-05-06",
+          "passage": "Since February 28, the French Armed Forces have been acting in a defensive posture.",
+          "supportLevel": "partial",
+          "score": 45
+        }
+      ]
+    },
+    {
+      "id": "c-israel-lebanon-ceasefire",
+      "text": "Israel and Lebanon announced a ceasefire on April 16.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "usatoday-2026-05-06",
+          "passage": "The attacks on the suburbs south of Beirut are the first in weeks since Israel and Lebanon announced a ceasefire on April 16.",
+          "supportLevel": "strong",
+          "score": 95
+        }
+      ]
+    },
+    {
+      "id": "c-healthcare-attacks",
+      "text": "The United Nations recorded 151 attacks on healthcare workers by Israel resulting in 103 deaths and 230 injuries.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "usatoday-2026-05-06",
+          "passage": "The United Nations called out Israel over its strikes killing healthcare workers, saying the World Health Organization has recorded 151 such attacks resulting in 103 deaths and 230 injuries.",
+          "supportLevel": "strong",
+          "score": 95
+        }
+      ]
+    },
+    {
+      "id": "c-brent-crude-price",
+      "text": "Brent crude oil was trading just below $103 a barrel on May 6, down 6.5%.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "usatoday-2026-05-06",
+          "passage": "Brent crude was trading just below $103 a barrel in the morning of May 6, down 6.5%.",
+          "supportLevel": "strong",
+          "score": 100
+        },
+        {
+          "sourceId": "foxnews-2026-05-06",
+          "passage": "Brent crude fell below $100 a barrel — its lowest level in weeks — on expectations that risks to shipping through the Strait of Hormuz could ease if a deal is reached.",
+          "supportLevel": "partial",
+          "score": 35
+        }
+      ]
+    },
+    {
+      "id": "c-gasoline-prices",
+      "text": "Gasoline prices across the U.S. surged to an average of $4.54 a gallon on Wednesday, the highest since July 2022.",
+      "overallTrust": "High",
+      "evidence": [
+        {
+          "sourceId": "cbsnews-2026-05-06",
+          "passage": "Gasoline prices across the U.S. surged to an average of $4.54 a gallon on Wednesday, the highest since July 2022, according to AAA data.",
+          "supportLevel": "strong",
+          "score": 100
+        },
+        {
+          "sourceId": "usatoday-2026-05-06",
+          "passage": "The average price of a gallon of gas across the U.S. continued to climb, hitting $4.54 Wednesday morning, according to GasBuddy.",
+          "supportLevel": "strong",
+          "score": 95
+        },
+        {
+          "sourceId": "foxnews-2026-05-06",
+          "passage": "The national average price for a gallon of gas climbed 5 cents to $4.53 on Wednesday, according to AAA.",
+          "supportLevel": "partial",
+          "score": 45
+        }
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "id": "t-1",
+      "date": "2026-05-06",
+      "sourceId": "cbsnews-2026-05-06",
+      "stage": "Picked up",
+      "shortNote": "Trump threatens Iran with higher level military strikes",
+      "claimId": "c-trump-iran-peace-ultimatum"
+    },
+    {
+      "id": "t-2",
+      "date": "2026-05-06",
+      "sourceId": "cbsnews-2026-05-06",
+      "stage": "Supplemented",
+      "shortNote": "Adds details on pausing Project Freedom for complete final agreement",
+      "claimId": "c-trump-iran-peace-ultimatum"
+    },
+    {
+      "id": "t-3",
+      "date": "2026-05-06",
+      "sourceId": "cbsnews-2026-05-06",
+      "stage": "Picked up",
+      "shortNote": "CBS reports same 20mm cannon disabling of rudder",
+      "claimId": "c-m-t-hasna-disabled"
+    },
+    {
+      "id": "t-4",
+      "date": "2026-05-06",
+      "sourceId": "cbsnews-2026-05-06",
+      "stage": "Appears",
+      "shortNote": "AAA reports gas prices hit $4.54/gallon average",
+      "claimId": "c-gasoline-prices"
+    },
+    {
+      "id": "t-5",
+      "date": "2026-05-06",
+      "sourceId": "foxnews-2026-05-06",
+      "stage": "Appears",
+      "shortNote": "Trump announces temporary pause of Project Freedom operation",
+      "claimId": "c-project-freedom-pause"
+    },
+    {
+      "id": "t-6",
+      "date": "2026-05-06",
+      "sourceId": "foxnews-2026-05-06",
+      "stage": "Supplemented",
+      "shortNote": "CENTCOM adds blockade context and Iranian port destination",
+      "claimId": "c-m-t-hasna-disabled"
+    },
+    {
+      "id": "t-7",
+      "date": "2026-05-06",
+      "sourceId": "usatoday-2026-05-06",
+      "stage": "Appears",
+      "shortNote": "Trump threatens Iran with resumed bombing if peace framework rejected",
+      "claimId": "c-trump-iran-peace-ultimatum"
+    },
+    {
+      "id": "t-8",
+      "date": "2026-05-06",
+      "sourceId": "usatoday-2026-05-06",
+      "stage": "Appears",
+      "shortNote": "Navy F/A-18 fired 20mm cannon at tanker rudder",
+      "claimId": "c-m-t-hasna-disabled"
+    },
+    {
+      "id": "t-9",
+      "date": "2026-05-06",
+      "sourceId": "usatoday-2026-05-06",
+      "stage": "Appears",
+      "shortNote": "War began Feb. 28, ceasefire since April 7.",
+      "claimId": "c-war-timeline"
+    },
+    {
+      "id": "t-10",
+      "date": "2026-05-06",
+      "sourceId": "usatoday-2026-05-06",
+      "stage": "Appears",
+      "shortNote": "First report of Israel-Lebanon ceasefire announcement",
+      "claimId": "c-israel-lebanon-ceasefire"
+    },
+    {
+      "id": "t-11",
+      "date": "2026-05-06",
+      "sourceId": "usatoday-2026-05-06",
+      "stage": "Appears",
+      "shortNote": "WHO records 151 attacks, 103 deaths, 230 injuries",
+      "claimId": "c-healthcare-attacks"
+    },
+    {
+      "id": "t-12",
+      "date": "2026-05-06",
+      "sourceId": "usatoday-2026-05-06",
+      "stage": "Appears",
+      "shortNote": "First report of Brent crude price and decline",
+      "claimId": "c-brent-crude-price"
+    }
+  ]
+}

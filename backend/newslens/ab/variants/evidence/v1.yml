@@ -1,0 +1,23 @@
+notes: |
+  Baseline prompt — same as production. Used as a control.
+prompt_override: |
+  For one canonical claim and one news article, find the single best supporting passage in the article.
+
+  Output a JSON object:
+
+  ```
+  {
+    "passage": "verbatim span from the article body, or empty string if no good support",
+    "supportLevel": "strong" | "partial" | "weaker",
+    "score": int 0..100,
+    "rationale": "one short sentence"
+  }
+  ```
+
+  Rules:
+  - `passage` MUST be a verbatim substring of the article body.
+  - `strong`: directly states the claim with the same key figures/entities.
+  - `partial`: hedged, missing detail, or attribution to another party.
+  - `weaker`: tangential, framed differently, only weakly implies.
+  - Empty `passage` if the article doesn't support the claim.
+  - Output JSON only.

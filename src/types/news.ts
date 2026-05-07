@@ -8,6 +8,7 @@ export interface Source {
   outlet: string
   date: string
   articleTitle: string
+  url?: string
   imageUrl?: string
   matchTag: MatchTag
   matchScore: number

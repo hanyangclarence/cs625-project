@@ -1,4 +1,4 @@
-export type ViewKey = 'cross-source' | 'evidence' | 'timeline'
+export type ViewKey = 'cross-source' | 'claim-trace'
 
 interface BottomTabsProps {
   active: ViewKey
@@ -7,14 +7,13 @@ interface BottomTabsProps {
 
 const tabs: { key: ViewKey; label: string; icon: string }[] = [
   { key: 'cross-source', label: 'Cross-Source', icon: '⇌' },
-  { key: 'evidence', label: 'Evidence Trace', icon: '◎' },
-  { key: 'timeline', label: 'Claim Timeline', icon: '⧗' },
+  { key: 'claim-trace', label: 'Claim Trace', icon: '◎' },
 ]
 
 export function BottomTabs({ active, onChange }: BottomTabsProps) {
   return (
     <nav className="border-t border-slate-200 bg-white/95 backdrop-blur px-2 py-2">
-      <div className="grid grid-cols-3 gap-1">
+      <div className="grid grid-cols-2 gap-1">
         {tabs.map((t) => {
           const isActive = t.key === active
           return (
